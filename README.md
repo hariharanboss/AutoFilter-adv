@@ -125,7 +125,7 @@ we are nothing without your support please support us to bring more features in 
 * Check [info.py](https://github.com/Kushalhk/Autofilter
 ) for more optional variables
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Kushalhk/Autofilter)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Kushalhk/AutoFilter/tree/Adv-features)
 
 [![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=https://github.com/Kushalhk/Autofilter&branch=main&name=HK-AutoFilter)
 
