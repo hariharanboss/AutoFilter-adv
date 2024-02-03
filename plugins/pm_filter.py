@@ -1341,6 +1341,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         else:
             await query.answer("Yᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ sᴜғғɪᴄɪᴀɴᴛ ʀɪɢᴛs ᴛᴏ ᴅᴏ ᴛʜɪs !", show_alert=True)
 
+    elif query.data == "pagesn1":
+        await query.answer(text=script.PAGE_TXT, show_alert=True)
+        
     elif query.data == "reqinfo":
         await query.answer(text=script.REQINFO, show_alert=True)
 
@@ -1408,147 +1411,217 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "kushal":
+        
+    elif query.data == "purchase":
         buttons = [[
-            InlineKeyboardButton('CHECK PLANS', callback_data='check')
+            InlineKeyboardButton('💵 ᴘᴀʏ ᴠɪᴀ ᴜᴘɪ ɪᴅ 💵', callback_data='upi_info')
         ],[
-            InlineKeyboardButton('HOW ITS WORK', url="https://t.me/TG_UPDATES1/391") 
+            InlineKeyboardButton('📸 ꜱᴄᴀɴ ǫʀ ᴄᴏᴅᴇ 📸', callback_data='qr_info')
+        ],[
+            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='premium_info')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text="◆◇◇"
-        )
-        await query.message.edit_text(
-            text="◆◆◇"
-        )
-        await query.message.edit_text(
-            text="◆◆◆"
-        )
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto("https://graph.org/file/123d3d5d9933784495f52.jpg")
-        ) 
-        await query.message.edit_text(
-            text=script.KUSHAL_TXT,
+            text=script.PURCHASE_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        ) 
-    elif query.data == "check":
+        )
+
+    elif query.data == "upi_info":
         buttons = [[
-            InlineKeyboardButton('PLAN 1', callback_data='plan1'), 
-            InlineKeyboardButton('PLAN 2', callback_data='plan2'), 
-            InlineKeyboardButton('PLAN 3', callback_data='plan3') 
+            InlineKeyboardButton('📲 ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ʜᴇʀᴇ', user_id=int(767250672))
         ],[
-            InlineKeyboardButton('<————«« Back »»————>', callback_data='kushal'), 
+            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='purchase')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text="◆◇◇"
-        )
-        await query.message.edit_text(
-            text="◆◆◇"
-        )
-        await query.message.edit_text(
-            text="◆◆◆"
-        )
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto("https://graph.org/file/9f8d4bf52250f85c4f38c.jpg")
-        ) 
-        await query.message.edit_text(
-            text=script.CHECK_TXT,
+            text=script.UPI_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+
+    elif query.data == "qr_info":
+        buttons = [[
+            InlineKeyboardButton('📲 ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ʜᴇʀᴇ', user_id=int(767250672))
+        ],[
+            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='purchase')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.QR_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )       
+
     elif query.data == "plan1":
         buttons = [[
-            InlineKeyboardButton('CLICK HERE TO PAY', url="https://cosmofeed.com/vig/658bb24ecc8dba001f3bab23")
+            Inelif query.data == "seeplans":
+        btn = [[
+            InlineKeyboardButton('📲 ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ', user_id=int(767250672))
         ],[
-            InlineKeyboardButton('Send ScreenShot', url="https://t.me/Tg_support1_bot"), 
-            InlineKeyboardButton('HOW ITS WORK', url="https://t.me/TG_UPDATES1/391") 
-        ],[
-            InlineKeyboardButton('CHECK PLANS', callback_data='check')
+            InlineKeyboardButton('❌ ᴄʟᴏꜱᴇ ❌', callback_data='close_data')
         ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text="◆◇◇"
-        )
-        await query.message.edit_text(
-            text="◆◆◇"
-        )
-        await query.message.edit_text(
-            text="◆◆◆"
-        )
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto("https://graph.org/file/9f8d4bf52250f85c4f38c.jpg")
-        ) 
-        await query.message.edit_text(
-            text=script.PLAN1_TXT,
+        reply_markup = InlineKeyboardMarkup(btn)
+        await query.message.reply_photo(
+            photo=(SUBSCRIPTION),
+            caption=script.PREPLANS_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        ) 
-    elif query.data == "plan2":
+        )
+
+    elif query.data == "give_trial":
+        userid = query.from_user.id
+        has_free_trial = await db.get_free_trial_status(userid)
+        if has_free_trial:
+            return
+        else:            
+            await db.give_free_trial(userid)
+            await query.answer("🎉 ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ꜰʀᴇᴇ ᴛʀᴀɪʟ ꜰᴏʀ 5 ᴍɪɴᴜᴛᴇs ꜰʀᴏᴍ ɴᴏᴡ !")
+            return    
+    
+    elif query.data == "premium_info":
         buttons = [[
-            InlineKeyboardButton('CLICK HERE TO PAY', url="https://cosmofeed.com/vig/658bb24ecc8dba001f3bab23")
+            InlineKeyboardButton('• ꜰʀᴇᴇ ᴛʀɪᴀʟ •', callback_data='free')
         ],[
-            InlineKeyboardButton('Send ScreenShot', url="https://t.me/Tg_support1_bot"), 
-            InlineKeyboardButton('HOW ITS WORK', url="https://t.me/TG_UPDATES1/391") 
-        ],[  
-            InlineKeyboardButton('CHECK PLANS', callback_data='check')                   
+            InlineKeyboardButton('• ʙʀᴏɴᴢᴇ •', callback_data='broze'),
+            InlineKeyboardButton('• ꜱɪʟᴠᴇʀ •', callback_data='silver')
+        ],[
+            InlineKeyboardButton('• ɢᴏʟᴅ •', callback_data='gold'),
+            InlineKeyboardButton('• ᴘʟᴀᴛɪɴᴜᴍ •', callback_data='platinum')
+        ],[
+            InlineKeyboardButton('• ᴅɪᴀᴍᴏɴᴅ •', callback_data='diamond'),
+            InlineKeyboardButton('• ᴏᴛʜᴇʀ •', callback_data='other')
+        ],[            
+            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
+        ]]
+        
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.PLAN_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "free":
+        buttons = [[
+            InlineKeyboardButton('⚜️ ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ɢᴇᴛ ꜰʀᴇᴇ ᴛʀɪᴀʟ', user_id=int(767250672))
+        ],[
+            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='other'),
+            InlineKeyboardButton('1 / 7', callback_data='pagesn1'),
+            InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='broze')
+        ],[
+            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='premium_info')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text="◆◇◇"
-        )
-        await query.message.edit_text(
-            text="◆◆◇"
-        )
-        await query.message.edit_text(
-            text="◆◆◆"
-        )
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto("https://graph.org/file/9f8d4bf52250f85c4f38c.jpg")
-        ) 
-        await query.message.edit_text(
-            text=script.PLAN2_TXT,
+            text=script.FREE_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        ) 
+        )
+    
+    elif query.data == "broze":
+        buttons = [[
+            InlineKeyboardButton('🔐 ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', callback_data='purchase')
+        ],[
+            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='free'),
+            InlineKeyboardButton('2 / 7', callback_data='pagesn1'),
+            InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='silver')
+        ],[
+            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='premium_info')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.BRONZE_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+
+    elif query.data == "silver":
+        buttons = [[
+            InlineKeyboardButton('🔐 ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', callback_data='purchase')
+        ],[
+            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='broze'),
+            InlineKeyboardButton('3 / 7', callback_data='pagesn1'),
+            InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='gold')
+        ],[
+            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='premium_info')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.SILVER_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+
+    elif query.data == "gold":
+        buttons = [[
+            InlineKeyboardButton('🔐 ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', callback_data='purchase')
+        ],[
+            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='silver'),
+            InlineKeyboardButton('4 / 7', callback_data='pagesn1'),
+            InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='platinum')
+        ],[
+            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='premium_info')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.GOLD_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
     elif query.data == "plan3":
         buttons = [[
-            InlineKeyboardButton('CLICK HERE TO PAY', url="https://cosmofeed.com/vig/658bb24ecc8dba001f3bab23")
+            InlineKeybelif query.data == "platinum":
+        buttons = [[
+            InlineKeyboardButton('🔐 ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', callback_data='purchase')
         ],[
-            InlineKeyboardButton('Send ScreenShot', url="https://t.me/Tg_support1_bot"), 
-            InlineKeyboardButton('HOW ITS WORK', url="https://t.me/TG_UPDATES1/391") 
+            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='gold'),
+            InlineKeyboardButton('5 / 7', callback_data='pagesn1'),
+            InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='diamond')
         ],[
-            InlineKeyboardButton('❗Close❗', callback_data='close_data')
+            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='premium_info')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text="◆◇◇"
-        )
-        await query.message.edit_text(
-            text="◆◆◇"
-        )
-        await query.message.edit_text(
-            text="◆◆◆"
-        )
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto("https://graph.org/file/9f8d4bf52250f85c4f38c.jpg")
-        ) 
-        await query.message.edit_text(
-            text=script.PLAN3_TXT,
+            text=script.PLATINUM_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        ) 
+        )
+
+    
+    elif query.data == "diamond":
+        buttons = [[
+            InlineKeyboardButton('🔐 ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', callback_data='purchase')
+        ],[
+            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='platinum'),
+            InlineKeyboardButton('6 / 7', callback_data='pagesn1'),
+            InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='other')
+        ],[
+            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='premium_info')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.DIAMOND_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+
+    elif query.data == "other":
+        buttons = [[
+            InlineKeyboardButton('☎️ ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ', user_id=int(767250672))
+        ],[
+            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='diamond'),
+            InlineKeyboardButton('7 / 7', callback_data='pagesn1'),
+            InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='free')
+        ],[
+            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='premium_info')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.OTHER_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+      )
+      
     elif query.data == "global_filters":
         buttons = [[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='filters')
