@@ -136,7 +136,7 @@ async def next_page(bot, query):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("▫️Gᴇᴛ Pʀᴇᴍɪᴜᴍ▫️", url=f"https://cosmofeed.com/vig/658bb24ecc8dba001f3bab23") 
+            InlineKeyboardButton("▫️ʙᴏᴛ ᴘᴍ▫️", url=f"https://t.me/mrunalinibot") 
         ])
     else:
         btn = []
@@ -461,7 +461,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
     # if ENABLE_SHORTLINK == True:
     btn.insert(0, [
         InlineKeyboardButton("sᴛᴀʀᴛ ʙᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
-        InlineKeyboardButton("▫️Gᴇᴛ Pʀᴇᴍɪᴜᴍ▫️", url=f"https://cosmofeed.com/vig/658bb24ecc8dba001f3bab23")
+        InlineKeyboardButton("▫️ʙᴏᴛ ᴘᴍ▫️", url=f"https://t.me/mrunalinibot")
     ])
     # else:
     #     btn.insert(0, [
@@ -630,7 +630,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
             for file in files
         ]
     btn.insert(0, [
-        InlineKeyboardButton("▫️Gᴇᴛ Pʀᴇᴍɪᴜᴍ▫️", url=f"https://cosmofeed.com/vig/658bb24ecc8dba001f3bab23"),
+        InlineKeyboardButton("▫️ʙᴏᴛ ᴘᴍ▫️", url=f"https://t.me/mrunalinibot"),
         InlineKeyboardButton("Sᴇʟᴇᴄᴛ ᴀɢᴀɪɴ", callback_data=f"seasons#{key}")
     ])
     
@@ -1361,9 +1361,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ],[
                     InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
                     InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
-                ],[
-                    InlineKeyboardButton('💳 𝐆𝐄𝐓 𝐀𝐃𝐙 𝐅𝐑𝐄𝐄 𝐅𝐈𝐋𝐄 💳', callback_data='premium_info') 
-                  ]]
+                ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
@@ -1649,8 +1647,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('✉️ ᴀɴʏ ǫᴜᴇʀʏ ✉️', url='https://telegram.me/Tg_support1_bot')
-        ], [
             InlineKeyboardButton('∙ ꜰɪʟᴛᴇʀs ∙', callback_data='filters'),
             InlineKeyboardButton('∙ ꜰɪʟᴇ sᴛᴏʀᴇ ∙', callback_data='store_file')
         ], [
@@ -1966,12 +1962,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "owner_info":
             btn = [[
                     InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="t.me/KUSHALHK")
+                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="t.me/hariogram")
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
                 query.message.id, 
-                InputMediaPhoto("https://graph.org/file/0219abb5fa7e21faf931a.jpg")
+                InputMediaPhoto("https://telegra.ph/file/acf0c0d08b9bd175bb13c.jpg")
             )
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
@@ -1997,7 +1993,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await client.edit_message_media(
                 query.message.chat.id, 
                 query.message.id, 
-                InputMediaPhoto("https://graph.org/file/0219abb5fa7e21faf931a.jpg")
+                InputMediaPhoto("https://telegra.ph/file/acf0c0d08b9bd175bb13c.jpg")
             )
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
@@ -2260,7 +2256,7 @@ async def auto_filter(client, msg, spoll=False):
     #         InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"send_fall#{pre}#{message.chat.id}-{message.id}#{0}")
     #     ])
         btn.insert(0, [
-            InlineKeyboardButton("▫️Gᴇᴛ Pʀᴇᴍɪᴜᴍ▫️", url=f"https://cosmofeed.com/vig/658bb24ecc8dba001f3bab23")
+            InlineKeyboardButton("▫️ʙᴏᴛ ᴘᴍ▫️", url=f"https://t.me/mrunalinibot")
         ])
     # if ENABLE_TUTORIAL == True:
     #     btn.insert(0, [
