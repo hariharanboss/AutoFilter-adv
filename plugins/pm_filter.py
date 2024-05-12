@@ -136,7 +136,7 @@ async def next_page(bot, query):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton(" ᴄʀᴜsʜ 😩 ", url=f"https://t.me/hariogram") 
+            InlineKeyboardButton("𝐓𝐡𝐞 𝐌𝐚𝐧", url=f"https://t.me/hariogram") 
         ])
     else:
         btn = []
@@ -461,7 +461,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
     # if ENABLE_SHORTLINK == True:
     btn.insert(0, [
         InlineKeyboardButton("sᴛᴀʀᴛ ʙᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
-        InlineKeyboardButton(" ᴄʀᴜsʜ 😩 ", url=f"https://t.me/hariogram")
+        InlineKeyboardButton("𝐓𝐡𝐞 𝐌𝐚𝐧", url=f"https://t.me/hariogram")
     ])
     # else:
     #     btn.insert(0, [
@@ -630,7 +630,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
             for file in files
         ]
     btn.insert(0, [
-        InlineKeyboardButton(" ᴄʀᴜsʜ 😩 ", url=f"https://t.me/hariogram"),
+        InlineKeyboardButton("𝐓𝐡𝐞 𝐌𝐚𝐧", url=f"https://t.me/hariogram"),
         InlineKeyboardButton("Sᴇʟᴇᴄᴛ ᴀɢᴀɪɴ", callback_data=f"seasons#{key}")
     ])
     
@@ -2031,7 +2031,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "shortlink_info":
             btn = [[
                     InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/Tg_support1_bot")
+                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/hariogram")
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
@@ -2256,7 +2256,7 @@ async def auto_filter(client, msg, spoll=False):
     #         InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"send_fall#{pre}#{message.chat.id}-{message.id}#{0}")
     #     ])
         btn.insert(0, [
-            InlineKeyboardButton("▫️ʙᴏᴛ ᴘᴍ▫️", url=f"https://t.me/mrunalinibot")
+            InlineKeyboardButton("𝐓𝐡𝐞 𝐌𝐚𝐧", url=f"https://t.me/mrunalinibot")
         ])
     # if ENABLE_TUTORIAL == True:
     #     btn.insert(0, [
