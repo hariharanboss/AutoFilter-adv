@@ -187,7 +187,7 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 
     CAPTION = """
 ➖➖➖➖➖➖➖➖➖➖
-🗂 𝗙𝗶𝗹𝗲: <b><font class=smcp>{file_name}</font></b>
+𝗙𝗶𝗹𝗲: <b><font class=smcp>{file_name}</font></b>
 ➖➖➖➖➖➖➖➖➖➖
 ⬤ ᴛɢ ᴄʜᴀɴɴᴇʟ: <a href='https://t.me/haris_garage'>ᴊᴏɪɴ ʜᴇʀᴇ</a>"""
     
