@@ -103,7 +103,7 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 ★ Tᴏᴛᴀʟ Cʜᴀᴛs: <code>{}</code>
 ★ Usᴇᴅ Sᴛᴏʀᴀɢᴇ: <code>{}</code>
 ★ Fʀᴇᴇ Sᴛᴏʀᴀɢᴇ: <code>{}</code>
-⬤ 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲: <a href='https://t.me/haris_garage'>ʜᴀʀɪ's ɢᴀʀᴀɢᴇ</a>
+★ 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲: <a href='https://t.me/haris_garage'>ʜᴀʀɪ's ɢᴀʀᴀɢᴇ</a>
 </b>
 •❅─────✧❅✦❅✧─────❅•"""
 
@@ -191,9 +191,7 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 ➖➖➖➖➖➖➖➖➖➖
 𝗙𝗶𝗹𝗲📂: <b><font class=smcp>{file_name}</font></b>
 ➖➖➖➖➖➖➖➖➖➖
-⬤ 𝐅𝐨𝐫 𝐅𝐚𝐬𝐭 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝐔𝐬𝐞⚡️: <a href='https://t.me/haricanlinkfilebot'>ᴄʟɪᴄʜ ʜᴇʀᴇ</a>
-
-⬤ 𝐓𝐆 𝐂𝐡𝐚𝐧𝐧𝐞𝐥🗿: <a href='https://t.me/haris_garage'>ᴊᴏɪɴ ʜᴇʀᴇ</a>"""
+⬤ 𝐅𝐨𝐫 𝐅𝐚𝐬𝐭 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠⚡️: <a href='https://t.me/haricanlinkfilebot'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>"""
     
     FORCE_SUB = """
 **⚠️ Pʟᴇᴀsᴇ ғᴏʟʟᴏᴡ ᴛʜɪs ʀᴜʟe ⚠️
