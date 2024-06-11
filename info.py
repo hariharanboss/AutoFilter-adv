@@ -56,6 +56,7 @@ REACTIONS = [
 ]
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
+IS_VERIFY = is_enabled((environ.get('IS_VERIFY', 'False')), False)
 SHORTLINK_URL = environ.get('SHORTLINK_URL', '')
 SHORTLINK_API = environ.get('SHORTLINK_API', '')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
@@ -90,7 +91,7 @@ PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002087882275'))
 
-LANGUAGES = ["malayalam", "mal", "tamil", "tam" ,"english", "eng", "hindi", "hin", "telugu", "tel", "kannada", "kan"]
+LANGUAGES = ["mal","tam","eng","hin","tel","kan"]
 
 SEASONS = ["season 1" , "season 2" , "season 3" , "season 4", "season 5" , "season 6" , "season 7" , "season 8" , "season 9" , "season 10"]
 
